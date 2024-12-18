@@ -1,0 +1,2675 @@
+{
+        "gameTime": 2.3498447,
+        "gameStatus": "gameRunning",
+        "scoreboard": {
+            "teams": [
+                {
+                    "teamName": "Team Blue",
+                    "teamTag": "BLUE",
+                    "teamIconUrl": "",
+                    "seriesScore": {
+                        "wins": 0,
+                        "losses": 0
+                    },
+                    "totalScore": {
+                        "wins": 0,
+                        "losses": 0
+                    },
+                    "infoText": "",
+                    "gold": 2500,
+                    "kills": 0,
+                    "towers": 0,
+                    "grubs": 0,
+                    "dragons": [],
+                    "baronPowerPlay": null,
+                    "dragonPowerPlay": null
+                },
+                {
+                    "teamName": "Team Red",
+                    "teamTag": "RED",
+                    "teamIconUrl": "",
+                    "seriesScore": {
+                        "wins": 0,
+                        "losses": 0
+                    },
+                    "totalScore": {
+                        "wins": 0,
+                        "losses": 0
+                    },
+                    "infoText": "",
+                    "gold": 2500,
+                    "kills": 0,
+                    "towers": 0,
+                    "grubs": 0,
+                    "dragons": [],
+                    "baronPowerPlay": null,
+                    "dragonPowerPlay": null
+                }
+            ],
+            "gameTime": 2.3498447,
+            "bestOf": 1
+        },
+        "tabs": [
+            {
+                "id": "00000000-0000-0000-0000-000000000100",
+                "players": [
+                    {
+                        "id": "34482eec-8423-4bad-b2ce-d86690a7173f",
+                        "playerName": "W2A Latra",
+                        "playerHashtag": "W2Atv",
+                        "championAssets": {
+                            "id": 54,
+                            "alias": "Malphite",
+                            "name": "Malphite",
+                            "splashCenteredImg": "cache/game/14.24/champion/Malphite/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Malphite/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Malphite/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Malphite/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "SeismicShard",
+                                "displayName": "SeismicShard",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "SeismicShard",
+                                    "iconAsset": "cache/game/14.24/champion/Malphite/abilities/malphite_q.png",
+                                    "iconName": "malphite_q.png"
+                                }
+                            },
+                            {
+                                "identifier": "Obduracy",
+                                "displayName": "Obduracy",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Obduracy",
+                                    "iconAsset": "cache/game/14.24/champion/Malphite/abilities/malphite_w.png",
+                                    "iconName": "malphite_w.png"
+                                }
+                            },
+                            {
+                                "identifier": "Landslide",
+                                "displayName": "Landslide",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Landslide",
+                                    "iconAsset": "cache/game/14.24/champion/Malphite/abilities/malphite_e.png",
+                                    "iconName": "malphite_e.png"
+                                }
+                            },
+                            {
+                                "identifier": "UFSlash",
+                                "displayName": "UFSlash",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "UFSlash",
+                                    "iconAsset": "cache/game/14.24/champion/Malphite/abilities/malphite_r.png",
+                                    "iconName": "malphite_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerTeleport",
+                                "displayName": "SummonerTeleport",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Teleport",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_teleport.png",
+                                    "iconName": "summoner_teleport.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8229,
+                                "name": "Arcane Comet",
+                                "iconPath": "cache/game/14.24/perk/8229.png"
+                            },
+                            {
+                                "id": 8226,
+                                "name": "Manaflow Band",
+                                "iconPath": "cache/game/14.24/perk/8226.png"
+                            },
+                            {
+                                "id": 8210,
+                                "name": "Transcendence",
+                                "iconPath": "cache/game/14.24/perk/8210.png"
+                            },
+                            {
+                                "id": 8237,
+                                "name": "Scorch",
+                                "iconPath": "cache/game/14.24/perk/8237.png"
+                            },
+                            {
+                                "id": 8451,
+                                "name": "Overgrowth",
+                                "iconPath": "cache/game/14.24/perk/8451.png"
+                            },
+                            {
+                                "id": 8444,
+                                "name": "Second Wind",
+                                "iconPath": "cache/game/14.24/perk/8444.png"
+                            },
+                            {
+                                "id": 5005,
+                                "name": "Attack Speed",
+                                "iconPath": "cache/game/14.24/perk/5005.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 685,
+                            "max": 685,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 280,
+                            "max": 280
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "6be4a0d5-7efb-4284-9e06-011154066b64",
+                        "playerName": "JPizzle",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 254,
+                            "alias": "Vi",
+                            "name": "Vi",
+                            "splashCenteredImg": "cache/game/14.24/champion/Vi/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Vi/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Vi/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Vi/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "ViQ",
+                                "displayName": "ViQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "ViQ",
+                                    "iconAsset": "cache/game/14.24/champion/Vi/abilities/viq.png",
+                                    "iconName": "viq.png"
+                                }
+                            },
+                            {
+                                "identifier": "ViW",
+                                "displayName": "ViW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "ViW",
+                                    "iconAsset": "cache/game/14.24/champion/Vi/abilities/viw.png",
+                                    "iconName": "viw.png"
+                                }
+                            },
+                            {
+                                "identifier": "ViE",
+                                "displayName": "ViE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 1,
+                                "assets": {
+                                    "spellName": "ViE",
+                                    "iconAsset": "cache/game/14.24/champion/Vi/abilities/vie.png",
+                                    "iconName": "vie.png"
+                                }
+                            },
+                            {
+                                "identifier": "ViR",
+                                "displayName": "ViR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "ViR",
+                                    "iconAsset": "cache/game/14.24/champion/Vi/abilities/vir.png",
+                                    "iconName": "vir.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerSmite",
+                                "displayName": "SummonerSmite",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 1,
+                                "assets": {
+                                    "spellName": "Smite",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_smite.png",
+                                    "iconName": "summoner_smite.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8010,
+                                "name": "Conqueror",
+                                "iconPath": "cache/game/14.24/perk/8010.png"
+                            },
+                            {
+                                "id": 9111,
+                                "name": "Triumph",
+                                "iconPath": "cache/game/14.24/perk/9111.png"
+                            },
+                            {
+                                "id": 9105,
+                                "name": "Legend: Haste",
+                                "iconPath": "cache/game/14.24/perk/9105.png"
+                            },
+                            {
+                                "id": 8014,
+                                "name": "Coup de Grace",
+                                "iconPath": "cache/game/14.24/perk/8014.png"
+                            },
+                            {
+                                "id": 8304,
+                                "name": "Magical Footwear",
+                                "iconPath": "cache/game/14.24/perk/8304.png"
+                            },
+                            {
+                                "id": 8347,
+                                "name": "Cosmic Insight",
+                                "iconPath": "cache/game/14.24/perk/8347.png"
+                            },
+                            {
+                                "id": 5005,
+                                "name": "Attack Speed",
+                                "iconPath": "cache/game/14.24/perk/5005.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 665,
+                            "max": 665,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 295,
+                            "max": 295
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "2fb7bbbf-01b5-4284-b5d2-e69ead439045",
+                        "playerName": "ohio gooner",
+                        "playerHashtag": "123",
+                        "championAssets": {
+                            "id": 799,
+                            "alias": "Ambessa",
+                            "name": "Ambessa",
+                            "splashCenteredImg": "cache/game/14.24/champion/Ambessa/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Ambessa/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Ambessa/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Ambessa/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "AmbessaQ",
+                                "displayName": "AmbessaQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "AmbessaQ",
+                                    "iconAsset": "cache/game/14.24/champion/Ambessa/abilities/icon_ambessa_q1.domina.png",
+                                    "iconName": "icon_ambessa_q1.domina.png"
+                                }
+                            },
+                            {
+                                "identifier": "AmbessaW",
+                                "displayName": "AmbessaW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "AmbessaWShield",
+                                    "iconAsset": "cache/game/14.24/champion/Ambessa/abilities/icon_ambessa_w.domina.png",
+                                    "iconName": "icon_ambessa_w.domina.png"
+                                }
+                            },
+                            {
+                                "identifier": "AmbessaE",
+                                "displayName": "AmbessaE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "AmbessaESlow",
+                                    "iconAsset": "cache/game/14.24/champion/Ambessa/abilities/icon_ambessa_e.domina.png",
+                                    "iconName": "icon_ambessa_e.domina.png"
+                                }
+                            },
+                            {
+                                "identifier": "AmbessaR",
+                                "displayName": "AmbessaR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "AmbessaRBuffSuppressing",
+                                    "iconAsset": "cache/game/14.24/champion/Ambessa/abilities/icon_ambessa_r.domina.png",
+                                    "iconName": "icon_ambessa_r.domina.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerDot",
+                                "displayName": "SummonerDot",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Ignite",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerignite.png",
+                                    "iconName": "summonerignite.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8437,
+                                "name": "Grasp of the Undying",
+                                "iconPath": "cache/game/14.24/perk/8437.png"
+                            },
+                            {
+                                "id": 8401,
+                                "name": "Shield Bash",
+                                "iconPath": "cache/game/14.24/perk/8401.png"
+                            },
+                            {
+                                "id": 8444,
+                                "name": "Second Wind",
+                                "iconPath": "cache/game/14.24/perk/8444.png"
+                            },
+                            {
+                                "id": 8451,
+                                "name": "Overgrowth",
+                                "iconPath": "cache/game/14.24/perk/8451.png"
+                            },
+                            {
+                                "id": 8143,
+                                "name": "Sudden Impact",
+                                "iconPath": "cache/game/14.24/perk/8143.png"
+                            },
+                            {
+                                "id": 8106,
+                                "name": "Ultimate Hunter",
+                                "iconPath": "cache/game/14.24/perk/8106.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5011,
+                                "name": "Health",
+                                "iconPath": "cache/game/14.24/perk/5011.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 695,
+                            "max": 695,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 200,
+                            "max": 200
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "dfeda6f5-4e13-4466-973c-8a7fba49b110",
+                        "playerName": "Enasmeti",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 21,
+                            "alias": "MissFortune",
+                            "name": "Miss Fortune",
+                            "splashCenteredImg": "cache/game/14.24/champion/MissFortune/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/MissFortune/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/MissFortune/loading.png",
+                            "squareImg": "cache/game/14.24/champion/MissFortune/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "MissFortuneRicochetShot",
+                                "displayName": "MissFortuneRicochetShot",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "MissFortuneRicochetShot",
+                                    "iconAsset": "cache/game/14.24/champion/MissFortune/abilities/missfortune_q.png",
+                                    "iconName": "missfortune_q.png"
+                                }
+                            },
+                            {
+                                "identifier": "MissFortuneViciousStrikes",
+                                "displayName": "MissFortuneViciousStrikes",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "MissFortuneViciousStrikes",
+                                    "iconAsset": "cache/game/14.24/champion/MissFortune/abilities/missfortune_passive.png",
+                                    "iconName": "missfortune_passive.png"
+                                }
+                            },
+                            {
+                                "identifier": "MissFortuneScattershot",
+                                "displayName": "MissFortuneScattershot",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "MissFortuneScattershot",
+                                    "iconAsset": "cache/game/14.24/champion/MissFortune/abilities/missfortune_e.png",
+                                    "iconName": "missfortune_e.png"
+                                }
+                            },
+                            {
+                                "identifier": "MissFortuneBulletTime",
+                                "displayName": "MissFortuneBulletTime",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "MissFortuneBulletTime",
+                                    "iconAsset": "cache/game/14.24/champion/MissFortune/abilities/missfortune_r.png",
+                                    "iconName": "missfortune_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerBarrier",
+                                "displayName": "SummonerBarrier",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Barrier",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerbarrier.png",
+                                    "iconName": "summonerbarrier.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8005,
+                                "name": "Press the Attack",
+                                "iconPath": "cache/game/14.24/perk/8005.png"
+                            },
+                            {
+                                "id": 8009,
+                                "name": "Presence of Mind",
+                                "iconPath": "cache/game/14.24/perk/8009.png"
+                            },
+                            {
+                                "id": 9103,
+                                "name": "Legend: Bloodline",
+                                "iconPath": "cache/game/14.24/perk/9103.png"
+                            },
+                            {
+                                "id": 8014,
+                                "name": "Coup de Grace",
+                                "iconPath": "cache/game/14.24/perk/8014.png"
+                            },
+                            {
+                                "id": 8233,
+                                "name": "Absolute Focus",
+                                "iconPath": "cache/game/14.24/perk/8233.png"
+                            },
+                            {
+                                "id": 8236,
+                                "name": "Gathering Storm",
+                                "iconPath": "cache/game/14.24/perk/8236.png"
+                            },
+                            {
+                                "id": 5005,
+                                "name": "Attack Speed",
+                                "iconPath": "cache/game/14.24/perk/5005.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 650,
+                            "max": 650,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 300,
+                            "max": 300
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "978ae7b1-ffb2-4258-9aee-54f930ae8411",
+                        "playerName": "thorfane",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 161,
+                            "alias": "Velkoz",
+                            "name": "Vel\u0027Koz",
+                            "splashCenteredImg": "cache/game/14.24/champion/Velkoz/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Velkoz/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Velkoz/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Velkoz/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "VelkozQ",
+                                "displayName": "VelkozQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "VelkozQ",
+                                    "iconAsset": "cache/game/14.24/champion/Velkoz/abilities/velkoz_q1.png",
+                                    "iconName": "velkoz_q1.png"
+                                }
+                            },
+                            {
+                                "identifier": "VelkozW",
+                                "displayName": "VelkozW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 1,
+                                "assets": {
+                                    "spellName": "VelkozW",
+                                    "iconAsset": "cache/game/14.24/champion/Velkoz/abilities/velkoz_w.png",
+                                    "iconName": "velkoz_w.png"
+                                }
+                            },
+                            {
+                                "identifier": "VelkozE",
+                                "displayName": "VelkozE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "VelkozE",
+                                    "iconAsset": "cache/game/14.24/champion/Velkoz/abilities/velkoz_e.png",
+                                    "iconName": "velkoz_e.png"
+                                }
+                            },
+                            {
+                                "identifier": "VelkozR",
+                                "displayName": "VelkozR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "VelkozR",
+                                    "iconAsset": "cache/game/14.24/champion/Velkoz/abilities/velkoz_r.png",
+                                    "iconName": "velkoz_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerHeal",
+                                "displayName": "SummonerHeal",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Heal",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_heal.png",
+                                    "iconName": "summoner_heal.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8229,
+                                "name": "Arcane Comet",
+                                "iconPath": "cache/game/14.24/perk/8229.png"
+                            },
+                            {
+                                "id": 8226,
+                                "name": "Manaflow Band",
+                                "iconPath": "cache/game/14.24/perk/8226.png"
+                            },
+                            {
+                                "id": 8210,
+                                "name": "Transcendence",
+                                "iconPath": "cache/game/14.24/perk/8210.png"
+                            },
+                            {
+                                "id": 8237,
+                                "name": "Scorch",
+                                "iconPath": "cache/game/14.24/perk/8237.png"
+                            },
+                            {
+                                "id": 8126,
+                                "name": "Cheap Shot",
+                                "iconPath": "cache/game/14.24/perk/8126.png"
+                            },
+                            {
+                                "id": 8106,
+                                "name": "Ultimate Hunter",
+                                "iconPath": "cache/game/14.24/perk/8106.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 600,
+                            "max": 600,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 469,
+                            "max": 469
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    }
+                ]
+            },
+            {
+                "id": "00000000-0000-0000-0000-000000000200",
+                "players": [
+                    {
+                        "id": "8b65b0f1-a634-4394-b78b-ec68ef00a614",
+                        "playerName": "startician",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 86,
+                            "alias": "Garen",
+                            "name": "Garen",
+                            "splashCenteredImg": "cache/game/14.24/champion/Garen/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Garen/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Garen/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Garen/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "GarenQ",
+                                "displayName": "GarenQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "GarenQ",
+                                    "iconAsset": "cache/game/14.24/champion/Garen/abilities/garen_q.png",
+                                    "iconName": "garen_q.png"
+                                }
+                            },
+                            {
+                                "identifier": "GarenW",
+                                "displayName": "GarenW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "GarenW",
+                                    "iconAsset": "cache/game/14.24/champion/Garen/abilities/garen_w.png",
+                                    "iconName": "garen_w.png"
+                                }
+                            },
+                            {
+                                "identifier": "GarenE",
+                                "displayName": "GarenE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "GarenE",
+                                    "iconAsset": "cache/game/14.24/champion/Garen/abilities/garen_e1.png",
+                                    "iconName": "garen_e1.png"
+                                }
+                            },
+                            {
+                                "identifier": "GarenR",
+                                "displayName": "GarenR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "GarenR",
+                                    "iconAsset": "cache/game/14.24/champion/Garen/abilities/garen_r.png",
+                                    "iconName": "garen_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerDot",
+                                "displayName": "SummonerDot",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Ignite",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerignite.png",
+                                    "iconName": "summonerignite.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8010,
+                                "name": "Conqueror",
+                                "iconPath": "cache/game/14.24/perk/8010.png"
+                            },
+                            {
+                                "id": 9111,
+                                "name": "Triumph",
+                                "iconPath": "cache/game/14.24/perk/9111.png"
+                            },
+                            {
+                                "id": 9105,
+                                "name": "Legend: Haste",
+                                "iconPath": "cache/game/14.24/perk/9105.png"
+                            },
+                            {
+                                "id": 8299,
+                                "name": "Last Stand",
+                                "iconPath": "cache/game/14.24/perk/8299.png"
+                            },
+                            {
+                                "id": 8275,
+                                "name": "Nimbus Cloak",
+                                "iconPath": "cache/game/14.24/perk/8275.png"
+                            },
+                            {
+                                "id": 8234,
+                                "name": "Celerity",
+                                "iconPath": "cache/game/14.24/perk/8234.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 700,
+                            "max": 700,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 0,
+                            "max": 0
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "022755ea-580e-4de4-aad9-f1e8c8a0d770",
+                        "playerName": "Eloon007",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 77,
+                            "alias": "Udyr",
+                            "name": "Udyr",
+                            "splashCenteredImg": "cache/game/14.24/champion/Udyr/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Udyr/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Udyr/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Udyr/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "UdyrQ",
+                                "displayName": "UdyrQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "UdyrQ",
+                                    "iconAsset": "cache/game/14.24/champion/Udyr/abilities/udyr_q.png",
+                                    "iconName": "udyr_q.png"
+                                }
+                            },
+                            {
+                                "identifier": "UdyrW",
+                                "displayName": "UdyrW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "UdyrW",
+                                    "iconAsset": "cache/game/14.24/champion/Udyr/abilities/udyr_w.png",
+                                    "iconName": "udyr_w.png"
+                                }
+                            },
+                            {
+                                "identifier": "UdyrE",
+                                "displayName": "UdyrE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "UdyrE",
+                                    "iconAsset": "cache/game/14.24/champion/Udyr/abilities/udyr_e.png",
+                                    "iconName": "udyr_e.png"
+                                }
+                            },
+                            {
+                                "identifier": "UdyrR",
+                                "displayName": "UdyrR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "UdyrR",
+                                    "iconAsset": "cache/game/14.24/champion/Udyr/abilities/udyr_r.png",
+                                    "iconName": "udyr_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerSmite",
+                                "displayName": "SummonerSmite",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 1,
+                                "assets": {
+                                    "spellName": "Smite",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_smite.png",
+                                    "iconName": "summoner_smite.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 9923,
+                                "name": "Hail of Blades",
+                                "iconPath": "cache/game/14.24/perk/9923.png"
+                            },
+                            {
+                                "id": 8143,
+                                "name": "Sudden Impact",
+                                "iconPath": "cache/game/14.24/perk/8143.png"
+                            },
+                            {
+                                "id": 8138,
+                                "name": "Eyeball Collection",
+                                "iconPath": "cache/game/14.24/perk/8138.png"
+                            },
+                            {
+                                "id": 8135,
+                                "name": "Treasure Hunter",
+                                "iconPath": "cache/game/14.24/perk/8135.png"
+                            },
+                            {
+                                "id": 8234,
+                                "name": "Celerity",
+                                "iconPath": "cache/game/14.24/perk/8234.png"
+                            },
+                            {
+                                "id": 8232,
+                                "name": "Waterwalking",
+                                "iconPath": "cache/game/14.24/perk/8232.png"
+                            },
+                            {
+                                "id": 5005,
+                                "name": "Attack Speed",
+                                "iconPath": "cache/game/14.24/perk/5005.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 674,
+                            "max": 674,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 271,
+                            "max": 271
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "095e417a-6fc2-40fa-a391-f304605c3328",
+                        "playerName": "Koleokuku",
+                        "playerHashtag": "123",
+                        "championAssets": {
+                            "id": 80,
+                            "alias": "Pantheon",
+                            "name": "Pantheon",
+                            "splashCenteredImg": "cache/game/14.24/champion/Pantheon/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Pantheon/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Pantheon/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Pantheon/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "PantheonQ",
+                                "displayName": "PantheonQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "PantheonQ",
+                                    "iconAsset": "cache/game/14.24/champion/Pantheon/abilities/pantheon_q1.png",
+                                    "iconName": "pantheon_q1.png"
+                                }
+                            },
+                            {
+                                "identifier": "PantheonW",
+                                "displayName": "PantheonW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "PantheonW",
+                                    "iconAsset": "cache/game/14.24/champion/Pantheon/abilities/pantheon_w1.png",
+                                    "iconName": "pantheon_w1.png"
+                                }
+                            },
+                            {
+                                "identifier": "PantheonE",
+                                "displayName": "PantheonE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "PantheonE",
+                                    "iconAsset": "cache/game/14.24/champion/Pantheon/abilities/pantheon_e1.png",
+                                    "iconName": "pantheon_e1.png"
+                                }
+                            },
+                            {
+                                "identifier": "PantheonR",
+                                "displayName": "PantheonR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "PantheonR",
+                                    "iconAsset": "cache/game/14.24/champion/Pantheon/abilities/pantheon_r.png",
+                                    "iconName": "pantheon_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerDot",
+                                "displayName": "SummonerDot",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Ignite",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerignite.png",
+                                    "iconName": "summonerignite.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8005,
+                                "name": "Press the Attack",
+                                "iconPath": "cache/game/14.24/perk/8005.png"
+                            },
+                            {
+                                "id": 9111,
+                                "name": "Triumph",
+                                "iconPath": "cache/game/14.24/perk/9111.png"
+                            },
+                            {
+                                "id": 9105,
+                                "name": "Legend: Haste",
+                                "iconPath": "cache/game/14.24/perk/9105.png"
+                            },
+                            {
+                                "id": 8014,
+                                "name": "Coup de Grace",
+                                "iconPath": "cache/game/14.24/perk/8014.png"
+                            },
+                            {
+                                "id": 8143,
+                                "name": "Sudden Impact",
+                                "iconPath": "cache/game/14.24/perk/8143.png"
+                            },
+                            {
+                                "id": 8105,
+                                "name": "Relentless Hunter",
+                                "iconPath": "cache/game/14.24/perk/8105.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 660,
+                            "max": 660,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 317,
+                            "max": 317
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "f29bf5f2-f02f-457c-a0e8-a07d453c5ed3",
+                        "playerName": "choot",
+                        "playerHashtag": "EUW",
+                        "championAssets": {
+                            "id": 51,
+                            "alias": "Caitlyn",
+                            "name": "Caitlyn",
+                            "splashCenteredImg": "cache/game/14.24/champion/Caitlyn/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Caitlyn/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Caitlyn/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Caitlyn/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "CaitlynQ",
+                                "displayName": "CaitlynQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "CaitlynQ",
+                                    "iconAsset": "cache/game/14.24/champion/Caitlyn/abilities/caitlynq.png",
+                                    "iconName": "caitlynq.png"
+                                }
+                            },
+                            {
+                                "identifier": "CaitlynW",
+                                "displayName": "CaitlynW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 1,
+                                "assets": {
+                                    "spellName": "CaitlynW",
+                                    "iconAsset": "cache/game/14.24/champion/Caitlyn/abilities/caitlynw.png",
+                                    "iconName": "caitlynw.png"
+                                }
+                            },
+                            {
+                                "identifier": "CaitlynE",
+                                "displayName": "CaitlynE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "CaitlynE",
+                                    "iconAsset": "cache/game/14.24/champion/Caitlyn/abilities/caitlyne.png",
+                                    "iconName": "caitlyne.png"
+                                }
+                            },
+                            {
+                                "identifier": "CaitlynR",
+                                "displayName": "CaitlynR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "CaitlynR",
+                                    "iconAsset": "cache/game/14.24/champion/Caitlyn/abilities/caitlynr.png",
+                                    "iconName": "caitlynr.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerBarrier",
+                                "displayName": "SummonerBarrier",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Barrier",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerbarrier.png",
+                                    "iconName": "summonerbarrier.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8021,
+                                "name": "Fleet Footwork",
+                                "iconPath": "cache/game/14.24/perk/8021.png"
+                            },
+                            {
+                                "id": 8009,
+                                "name": "Presence of Mind",
+                                "iconPath": "cache/game/14.24/perk/8009.png"
+                            },
+                            {
+                                "id": 9103,
+                                "name": "Legend: Bloodline",
+                                "iconPath": "cache/game/14.24/perk/9103.png"
+                            },
+                            {
+                                "id": 8014,
+                                "name": "Coup de Grace",
+                                "iconPath": "cache/game/14.24/perk/8014.png"
+                            },
+                            {
+                                "id": 8233,
+                                "name": "Absolute Focus",
+                                "iconPath": "cache/game/14.24/perk/8233.png"
+                            },
+                            {
+                                "id": 8236,
+                                "name": "Gathering Storm",
+                                "iconPath": "cache/game/14.24/perk/8236.png"
+                            },
+                            {
+                                "id": 5005,
+                                "name": "Attack Speed",
+                                "iconPath": "cache/game/14.24/perk/5005.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5001,
+                                "name": "Health Scaling",
+                                "iconPath": "cache/game/14.24/perk/5001.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 590,
+                            "max": 590,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 315,
+                            "max": 315
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    },
+                    {
+                        "id": "f1944fa1-3d47-4453-9755-26a448772e40",
+                        "playerName": "MysTHICC",
+                        "playerHashtag": "5789",
+                        "championAssets": {
+                            "id": 147,
+                            "alias": "Seraphine",
+                            "name": "Seraphine",
+                            "splashCenteredImg": "cache/game/14.24/champion/Seraphine/splashCentered.jpg",
+                            "splashImg": "cache/game/14.24/champion/Seraphine/splash.jpg",
+                            "loadingImg": "cache/game/14.24/champion/Seraphine/loading.png",
+                            "squareImg": "cache/game/14.24/champion/Seraphine/square.png"
+                        },
+                        "abilities": [
+                            {
+                                "identifier": "SeraphineQ",
+                                "displayName": "SeraphineQ",
+                                "slot": "Q",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "SeraphineQ",
+                                    "iconAsset": "cache/game/14.24/champion/Seraphine/abilities/seraphine_q1.png",
+                                    "iconName": "seraphine_q1.png"
+                                }
+                            },
+                            {
+                                "identifier": "SeraphineW",
+                                "displayName": "SeraphineW",
+                                "slot": "W",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "SeraphineW",
+                                    "iconAsset": "cache/game/14.24/champion/Seraphine/abilities/seraphine_w1.png",
+                                    "iconName": "seraphine_w1.png"
+                                }
+                            },
+                            {
+                                "identifier": "SeraphineE",
+                                "displayName": "SeraphineE",
+                                "slot": "E",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "SeraphineE",
+                                    "iconAsset": "cache/game/14.24/champion/Seraphine/abilities/seraphine_e1.png",
+                                    "iconName": "seraphine_e1.png"
+                                }
+                            },
+                            {
+                                "identifier": "SeraphineR",
+                                "displayName": "SeraphineR",
+                                "slot": "R",
+                                "totalCooldown": 0,
+                                "cooldown": 0,
+                                "level": 0,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "SeraphineR",
+                                    "iconAsset": "cache/game/14.24/champion/Seraphine/abilities/seraphine_r.png",
+                                    "iconName": "seraphine_r.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerFlash",
+                                "displayName": "SummonerFlash",
+                                "slot": "D",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Flash",
+                                    "iconAsset": "cache/game/14.24/summoner/summoner_flash.png",
+                                    "iconName": "summoner_flash.png"
+                                }
+                            },
+                            {
+                                "identifier": "SummonerDot",
+                                "displayName": "SummonerDot",
+                                "slot": "F",
+                                "totalCooldown": 15,
+                                "cooldown": 12.895306,
+                                "level": 1,
+                                "charges": 0,
+                                "assets": {
+                                    "spellName": "Ignite",
+                                    "iconAsset": "cache/game/14.24/summoner/summonerignite.png",
+                                    "iconName": "summonerignite.png"
+                                }
+                            }
+                        ],
+                        "perks": [
+                            {
+                                "id": 8214,
+                                "name": "Summon Aery",
+                                "iconPath": "cache/game/14.24/perk/8214.png"
+                            },
+                            {
+                                "id": 8226,
+                                "name": "Manaflow Band",
+                                "iconPath": "cache/game/14.24/perk/8226.png"
+                            },
+                            {
+                                "id": 8210,
+                                "name": "Transcendence",
+                                "iconPath": "cache/game/14.24/perk/8210.png"
+                            },
+                            {
+                                "id": 8236,
+                                "name": "Gathering Storm",
+                                "iconPath": "cache/game/14.24/perk/8236.png"
+                            },
+                            {
+                                "id": 8463,
+                                "name": "Font of Life",
+                                "iconPath": "cache/game/14.24/perk/8463.png"
+                            },
+                            {
+                                "id": 8453,
+                                "name": "Revitalize",
+                                "iconPath": "cache/game/14.24/perk/8453.png"
+                            },
+                            {
+                                "id": 5007,
+                                "name": "Ability Haste",
+                                "iconPath": "cache/game/14.24/perk/5007.png"
+                            },
+                            {
+                                "id": 5008,
+                                "name": "Adaptive Force",
+                                "iconPath": "cache/game/14.24/perk/5008.png"
+                            },
+                            {
+                                "id": 5011,
+                                "name": "Health",
+                                "iconPath": "cache/game/14.24/perk/5011.png"
+                            }
+                        ],
+                        "health": {
+                            "current": 635,
+                            "max": 635,
+                            "shield": 0,
+                            "physicalShield": 0,
+                            "magicalShield": 0
+                        },
+                        "resource": {
+                            "type": "Mana",
+                            "current": 360,
+                            "max": 360
+                        },
+                        "stacksData": null,
+                        "hasBaron": false,
+                        "hasElder": false,
+                        "level": 1,
+                        "experienceToNextlevel": 0
+                    }
+                ]
+            }
+        ],
+        "scoreboardBottom": {
+            "gameTime": 2.3498447,
+            "teams": [
+                {
+                    "id": "00000000-0000-0000-0000-000000000100",
+                    "name": "Team Blue",
+                    "tag": "BLUE",
+                    "players": [
+                        {
+                            "champion": {
+                                "id": 54,
+                                "alias": "Malphite",
+                                "name": "Malphite",
+                                "splashCenteredImg": "cache/game/14.24/champion/Malphite/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Malphite/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Malphite/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Malphite/square.png"
+                            },
+                            "name": "W2A Latra#W2Atv",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 254,
+                                "alias": "Vi",
+                                "name": "Vi",
+                                "splashCenteredImg": "cache/game/14.24/champion/Vi/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Vi/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Vi/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Vi/square.png"
+                            },
+                            "name": "JPizzle#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 799,
+                                "alias": "Ambessa",
+                                "name": "Ambessa",
+                                "splashCenteredImg": "cache/game/14.24/champion/Ambessa/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Ambessa/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Ambessa/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Ambessa/square.png"
+                            },
+                            "name": "ohio gooner#123",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 21,
+                                "alias": "MissFortune",
+                                "name": "Miss Fortune",
+                                "splashCenteredImg": "cache/game/14.24/champion/MissFortune/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/MissFortune/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/MissFortune/loading.png",
+                                "squareImg": "cache/game/14.24/champion/MissFortune/square.png"
+                            },
+                            "name": "Enasmeti#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 161,
+                                "alias": "Velkoz",
+                                "name": "Vel\u0027Koz",
+                                "splashCenteredImg": "cache/game/14.24/champion/Velkoz/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Velkoz/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Velkoz/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Velkoz/square.png"
+                            },
+                            "name": "thorfane#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "00000000-0000-0000-0000-000000000200",
+                    "name": "Team Red",
+                    "tag": "RED",
+                    "players": [
+                        {
+                            "champion": {
+                                "id": 86,
+                                "alias": "Garen",
+                                "name": "Garen",
+                                "splashCenteredImg": "cache/game/14.24/champion/Garen/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Garen/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Garen/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Garen/square.png"
+                            },
+                            "name": "startician#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 77,
+                                "alias": "Udyr",
+                                "name": "Udyr",
+                                "splashCenteredImg": "cache/game/14.24/champion/Udyr/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Udyr/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Udyr/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Udyr/square.png"
+                            },
+                            "name": "Eloon007#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 80,
+                                "alias": "Pantheon",
+                                "name": "Pantheon",
+                                "splashCenteredImg": "cache/game/14.24/champion/Pantheon/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Pantheon/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Pantheon/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Pantheon/square.png"
+                            },
+                            "name": "Koleokuku#123",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 51,
+                                "alias": "Caitlyn",
+                                "name": "Caitlyn",
+                                "splashCenteredImg": "cache/game/14.24/champion/Caitlyn/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Caitlyn/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Caitlyn/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Caitlyn/square.png"
+                            },
+                            "name": "choot#EUW",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        },
+                        {
+                            "champion": {
+                                "id": 147,
+                                "alias": "Seraphine",
+                                "name": "Seraphine",
+                                "splashCenteredImg": "cache/game/14.24/champion/Seraphine/splashCentered.jpg",
+                                "splashImg": "cache/game/14.24/champion/Seraphine/splash.jpg",
+                                "loadingImg": "cache/game/14.24/champion/Seraphine/loading.png",
+                                "squareImg": "cache/game/14.24/champion/Seraphine/square.png"
+                            },
+                            "name": "MysTHICC#5789",
+                            "kills": 0,
+                            "deaths": 0,
+                            "assists": 0,
+                            "level": 1,
+                            "gold": 500,
+                            "totalGold": 500,
+                            "creepScore": 0,
+                            "visionScore": 0,
+                            "shutdown": 500,
+                            "respawnTimeRemaining": null,
+                            "items": [
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                },
+                                {
+                                    "id": 0,
+                                    "displayName": "",
+                                    "asset": "",
+                                    "cost": 0,
+                                    "count": 0,
+                                    "combineCost": 0,
+                                    "stacks": 0,
+                                    "visionScore": null
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
+        "baronPitTimer": {
+            "timeTotal": 360,
+            "timeLeft": 357.65015,
+            "subType": "cache/style/ingame/objectives/baronpit/grubs.png"
+        },
+        "dragonPitTimer": {
+            "timeTotal": 300,
+            "timeLeft": 297.65015,
+            "subType": "cache/style/ingame/objectives/dragonpit/dragon.png"
+        },
+        "inhibitors": []
+    }
+
