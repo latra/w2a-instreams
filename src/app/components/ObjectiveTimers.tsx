@@ -55,7 +55,7 @@ export default function ObjectiveTimers({ gameState }: ObjectiveTimerProps) {
               <div className="flex items-center text-xl">
                 {(team.baronPowerPlay.gold).toFixed(0)}
                 <Image 
-                  src={'/images/goldcoin.png'}
+                  src={'./images/goldcoin.png'}
                   alt="Gold Coin"
                   width={16}
                   height={16}

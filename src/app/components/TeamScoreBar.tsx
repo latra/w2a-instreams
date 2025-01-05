@@ -64,13 +64,13 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
             <div className="flex items-center gap-12 text-[#4985c4]">
               {/* Torre (extremo izquierdo) */}
               <span className="font-bold text-3xl flex items-center gap-2">
-                <Image src="/images/tower.png" alt="Towers" width={28} height={28} />
+                <Image src="./images/tower.png" alt="Towers" width={28} height={28} />
                 {blueTeam.towers}
               </span>
               
               {/* Oro (centro izquierdo) */}
               <span className="font-bold text-3xl flex items-center gap-2">
-                <Image src="/images/goldcoin.png" alt="Gold" width={28} height={28} />
+                <Image src="./images/goldcoin.png" alt="Gold" width={28} height={28} />
                 {(blueTeam.gold/1000).toFixed(1)}K
               </span>
             </div>
@@ -80,7 +80,7 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
               <span className="font-bold text-3xl text-[#4985c4] mr-2">
                 {blueTeam.kills}
               </span>
-              <Image src="/images/sword.png" alt="Kills" width={60} height={60} />
+              <Image src="./images/sword.png" alt="Kills" width={60} height={60} />
               <span className="font-bold text-3xl text-[#a33835] ml-2">
                 {redTeam.kills}
               </span>
@@ -90,13 +90,13 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
             <div className="flex items-center gap-12 text-[#a33835]">
               {/* Oro (centro derecho) */}
               <span className="font-bold text-3xl flex items-center gap-2">
-                <Image src="/images/goldcoin.png" alt="Gold" width={28} height={28} />
+                <Image src="./images/goldcoin.png" alt="Gold" width={28} height={28} />
                 {(redTeam.gold/1000).toFixed(1)}K
               </span>
               
               {/* Torre (extremo derecho) */}
               <span className="font-bold text-3xl flex items-center gap-2">
-                <Image src="/images/tower.png" alt="Towers" width={28} height={28} />
+                <Image src="./images/tower.png" alt="Towers" width={28} height={28} />
                 {redTeam.towers}
               </span>
             </div>
@@ -110,7 +110,7 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
                 <div key={index} className="w-6 h-6">
                   {dragon && (
                     <Image 
-                      src={`/images/dragons/${dragon}.png`}
+                      src={`./images/dragons/${dragon.toLowerCase()}.png`}
                       alt={dragon}
                       width={24}
                       height={24}
@@ -127,7 +127,7 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
               <div className="flex items-center gap-2 text-white/90 font-bold text-xl">
                 {blueTeam.grubs}
                 <Image 
-                  src="/images/voidgr.png"
+                  src="./images/voidgr.png"
                   alt="grubs"
                   width={24}
                   height={24}
@@ -145,7 +145,7 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
               {/* Grubs rojo */}
               <div className="flex items-center gap-2 text-white/90 font-bold text-xl">
                 <Image 
-                  src="/images/voidgr.png"
+                  src="./images/voidgr.png"
                   alt="grubs"
                   width={24}
                   height={24}
@@ -161,7 +161,7 @@ export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
                 <div key={index} className="w-6 h-6">
                   {dragon && (
                     <Image 
-                      src={`/images/dragons/${dragon}.png`}
+                      src={`./images/dragons/${dragon.toLowerCase()}.png`}
                       alt={dragon}
                       width={24}
                       height={24}

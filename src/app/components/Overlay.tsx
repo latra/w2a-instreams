@@ -147,7 +147,7 @@ const Overlay: React.FC<OverlayProps> = ({ state, config, setState }) => {
                   (state.blueTeam.isActive && !state.redTeam.isActive && config.blueTeam.logo) || 
                   config.redTeam.logo) && (
                   <img 
-                    src={!state.blueTeam.isActive && !state.redTeam.isActive ? '/images/w2alogo.svg' :
+                    src={!state.blueTeam.isActive && !state.redTeam.isActive ? './images/w2alogo.svg' :
                       state.blueTeam.isActive && !state.redTeam.isActive ? config.blueTeam.logo :
                       config.redTeam.logo
                     } 

@@ -1,10 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '',
+  basePath: '/w2a-instreams',
+  assetPrefix: '/w2a-instreams/',
   eslint: {
     ignoreDuringBuilds: true,
   },
+  distDir: 'out',
+
   images: {
     unoptimized: true,
     domains: ['localhost'],

@@ -19,7 +19,7 @@ const InhibitorIcon = ({ inhib, isBlueTeam }: { inhib: Inhibitor, isBlueTeam: bo
   return (
     <div className="relative mx-1">
       <Image
-        src={isBlueTeam ? "/images/inhibitor-blue.svg" : "/images/inhibitor-red.svg"}   
+        src={isBlueTeam ? "./images/inhibitor-blue.svg" : "./images/inhibitor-red.svg"}   
         alt="Inhibitor"
         width={32}
         height={32}
