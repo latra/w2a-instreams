@@ -2,11 +2,10 @@
 
 import { GameState } from '../types/gameState';
 import Image from 'next/image';
-import RotatingVideo from './RotatingVideo';
 import localFont from 'next/font/local';
 import ObjectiveTimers from './ObjectiveTimers';
 
-const akiraBold = localFont({ src: '../fonts/AkiraBold.ttf' });
+const akiraBold = localFont({ src: '../../assets/fonts/AkiraBold.ttf' });
 
 export default function TeamScoreBar({ gameState }: { gameState: GameState }) {
   const blueTeam = gameState.scoreboard.teams[0];

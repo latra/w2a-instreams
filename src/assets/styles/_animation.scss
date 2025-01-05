@@ -1,0 +1,108 @@
+.TheAbsoluteVoid {
+  * {
+    display: none;
+  }
+}
+
+.AnimationHidden {
+  .Timer {
+    position: relative;
+    bottom: -300px;
+    animation: timer 0.75s forwards;
+
+    .Blue, .Red {
+      opacity: 0;
+    }
+  }
+  .Team {
+    opacity: 0;
+  }
+  .Logo, .Patch {
+    opacity: 0;
+  }
+}
+
+@keyframes timer {
+  100% {
+    bottom: 0;
+  }
+}
+
+.AnimationTimer {
+  .Timer {
+    .Blue {
+      left: 100% !important;
+      transition: none !important;
+      animation: timer-colors 0.5s forwards;
+      animation-timing-function: ease-in;
+    }
+    .Red {
+      left: -100% !important;
+      transition: none !important;
+      animation: timer-colors 0.5s forwards;
+      animation-timing-function: ease-in;
+    }
+  }
+  .Team {
+    &.TeamBlue {
+      .Bans {
+        transform: translateX(100%);
+        animation: bans-fadein 1s forwards;
+        animation-delay: 0.5s;
+      }
+    }
+
+    &.TeamRed {
+      .Bans {
+        transform: translateX(-100%);
+        animation: bans-fadein 1s forwards;
+        animation-delay: 0.5s;
+      }
+    }
+  }
+}
+
+@keyframes timer-colors {
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes bans-fadein {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.AnimationBansPick {
+  --animation-initial-delay: 0.4s;
+  --animation-progress: 0.1745s;
+
+  .Pick {
+    animation: pick-move-up 0.7s forwards;
+    top: 100%;
+  }
+  
+  // ... resto de las animaciones para picks
+}
+
+.AnimationBansPickOnly {
+  .Timer {
+    .Blue {
+      left: 0 !important;
+    }
+    .Red {
+      left: 0 !important;
+    }
+  }
+}
+
+@keyframes pick-move-up {
+  100% {
+    top: 0;
+  }
+}
+
+.AnimationPigs {
+  // EPIC gamer moment
+} 

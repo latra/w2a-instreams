@@ -13,28 +13,6 @@ interface Inhibitor {
   subType: string;
 }
 
-const InhibitorTimer = ({ timeLeft, timeTotal }: { timeLeft: number, timeTotal: number }) => {
-  const minutes = Math.floor(timeLeft / 60);
-  const seconds = Math.floor(timeLeft % 60);
-  const progress = (timeLeft / timeTotal) * 100;
-
-  return (
-    <div className="w-16 h-8 bg-gray-900/70 rounded relative">
-      {/* Barra de progreso */}
-      <div 
-        className="absolute bottom-0 left-0 h-1 bg-avalanche"
-        style={{ width: `${progress}%` }}
-      />
-      {/* Tiempo */}
-      <div className="absolute inset-0 flex items-center justify-center">
-        <span className="text-xs font-mono text-white/90">
-          {minutes}:{seconds.toString().padStart(2, '0')}
-        </span>
-      </div>
-    </div>
-  );
-};
-
 const InhibitorIcon = ({ inhib, isBlueTeam }: { inhib: Inhibitor, isBlueTeam: boolean }) => {
   const isDestroyed = inhib.timeLeft > 0;
   

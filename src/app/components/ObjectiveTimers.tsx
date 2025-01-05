@@ -23,7 +23,8 @@ export default function ObjectiveTimers({ gameState }: ObjectiveTimerProps) {
     if (time <= 0) return 0;
     return ((maxTime-time) / maxTime) * 100;
   };
-  const renderPowerPlay = (team: Team, color: string, time: number, icon: string, alt: string, maxTime: number = 360) => {
+  const renderPowerPlay = (team: Team, color: string, time: number, icon: string, alt: string) => {
+    console.log(team.baronPowerPlay);
     const progress = calculateProgress(team.baronPowerPlay.timeLeft, team.baronPowerPlay.timeTotal);
     const isAvailable = time <= 0;
     
@@ -110,8 +111,8 @@ export default function ObjectiveTimers({ gameState }: ObjectiveTimerProps) {
       {/* Baron Timer */}
       <div className="absolute left-0">
         {(gameState.scoreboard.teams[0].baronPowerPlay === null || gameState.scoreboard.teams[0].baronPowerPlay.timeLeft < 0) && (gameState.scoreboard.teams[1].baronPowerPlay === null || gameState.scoreboard.teams[1].baronPowerPlay.timeLeft < 0) && renderTimer(gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron', gameState.baronPitTimer.timeTotal)}
-        {(gameState.scoreboard.teams[0].baronPowerPlay !== null && gameState.scoreboard.teams[0].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[0], 'blue', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron', gameState.baronPitTimer.timeTotal)}
-        {(gameState.scoreboard.teams[1].baronPowerPlay !== null && gameState.scoreboard.teams[1].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[1], 'red', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron', gameState.baronPitTimer.timeTotal)}
+        {(gameState.scoreboard.teams[0].baronPowerPlay !== null && gameState.scoreboard.teams[0].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[0], 'blue', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron')}
+        {(gameState.scoreboard.teams[1].baronPowerPlay !== null && gameState.scoreboard.teams[1].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[1], 'red', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron')}
       </div>
       
       {/* Dragon Timer */}

@@ -16,10 +16,17 @@ export interface Team {
   towers: number;
   grubs: number;
   dragons: string[];
-  baronPowerPlay: number | null;
+  baronPowerPlay: BaronPowerPlay | null;
   dragonPowerPlay: number | null;
 }
 
+export interface BaronPowerPlay {
+  timeTotal: number;
+  timeLeft: number;
+  deaths: number;
+  gold: number;
+  kills: number;
+}
 export interface ChampionAssets {
   id: number;
   alias: string;

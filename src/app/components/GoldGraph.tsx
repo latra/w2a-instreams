@@ -18,7 +18,6 @@ export default function GoldGraph({ gameState }: GoldGraphProps) {
   const higherBlueDiff = Math.max(...data.map(d => d.goldDiff));
   const higherRedDiff = Math.min(...data.map(d => d.goldDiff));
   const maxAbsValue = Math.max(...data.map(d => Math.abs(d.goldDiff)));
-  const total = maxAbsValue * 2;
   const offset = ((higherBlueDiff / (higherBlueDiff + Math.abs(higherRedDiff))) * 100).toFixed(2);
   const formatTime = (time: number) => {
     const minutes = Math.floor(time / 60);
@@ -39,21 +38,21 @@ export default function GoldGraph({ gameState }: GoldGraphProps) {
             <defs>
               <linearGradient id="splitColor" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#4985c4" stopOpacity={0.9} />
-                <stop offset={`${offset}%`} stopColor="#4985c4" stopOpacity={0.7} />
-                <stop offset={`${offset}%`} stopColor="#a33835" stopOpacity={0.7} />
+                <stop offset={`${offset}%`} stopColor="#4985c4" stopOpacity={1} />
+                <stop offset={`${offset}%`} stopColor="#a33835" stopOpacity={1} />
                 <stop offset="100%" stopColor="#a33835" stopOpacity={0.9} />
               </linearGradient>
             </defs>
             <XAxis 
               dataKey="time" 
               tickFormatter={formatTime}
-              stroke="#ffffff50"
-              tick={{ fill: '#ffffff80', fontSize: 12 }}
+              stroke="#ffffff"
+              tick={{ fill: '#ffffffca', fontSize: 12 }}
             />
             <YAxis 
               tickFormatter={formatGold}
-              stroke="#ffffff50"
-              tick={{ fill: '#ffffff80', fontSize: 12 }}
+              stroke="#ffffff"
+              tick={{ fill: '#ffffffca', fontSize: 12 }}
               domain={[-maxAbsValue, maxAbsValue]}
             />
             <Tooltip 
@@ -68,11 +67,21 @@ export default function GoldGraph({ gameState }: GoldGraphProps) {
             />
             <Area 
               type="monotone" 
-              dataKey="goldDiff" 
+              dataKey="goldDiff"
+              opacity={1}
               fill="url(#splitColor)"
-              stroke={(d) => d >= 0 ? '#4985c4' : '#a33835'}
+              stroke="#4985c4"
               strokeWidth={2}
               isAnimationActive={false}
+            />
+            <Area 
+              type="monotone" 
+              dataKey="goldDiff"
+              fill="url(#splitColor)"
+              stroke="#1f1f1f"
+              strokeWidth={1}
+              isAnimationActive={false}
+              baseValue={0}
             />
           </AreaChart>
         </ResponsiveContainer>

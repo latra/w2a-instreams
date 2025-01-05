@@ -1,0 +1,131 @@
+.root {
+  --box-width: 160px;
+  --box-height: calc(var(--box-pick-height) + var(--box-ban-height));
+  --box-logo-height: calc(100% - calc(var(--box-ban-height) + var(--box-patch-height)));
+  --box-timer-height: var(--box-ban-height);
+  --box-patch-height: 40px;
+
+  --box-team-width: calc(5 * var(--box-width));
+  --box-pick-height: 260px;
+  --box-ban-height: 59px;
+  --box-ban-spacer: calc(var(--box-ban-height) / 2);
+
+  --pick-name-height: 30px;
+  --pick-image-crop: 8px;
+
+  --ban-image-crop: 6px;
+  --summoner-spell-size: 40px;
+
+  --champselect-margin-bot: 50px;
+
+  --color-red: rgb(222,40,70);
+  --color-blue: rgb(0,151,196);
+
+  --border-between-color: darkgray;
+  --border-width: 3px;
+}
+
+@import "./fonts";
+@import "./animation";
+@import "./team";
+@import "./timer";
+@import "./picks";
+@import "./bans";
+
+.Europe {
+    .MiddleBox {
+        position: absolute;
+        color: rgb(0, 0, 0);
+        width: var(--box-width);
+        height: calc(var(--box-pick-height) + var(--box-ban-height) + 40px);
+        bottom: calc(var(--champselect-margin-bot) - 40px);
+        left: 50.05%;
+        transform: translateX(-50%);
+        transition: background 0.3s ease;
+
+        &.Blue {
+            background:  linear-gradient(to right, var(--color-blue) 0%, rgba(0, 0, 0, 1) 100%);
+            .Logo {
+                background-image: linear-gradient(to right, var(--color-blue) 0%, rgba(0, 0, 0, 1) 100%);
+            }
+        }
+
+        &.Red {
+            background: linear-gradient(180deg, 
+            linear-gradient(to left, var(--color-red) 0%, rgba(8, 8, 8, 1) 100%)
+            );
+            .Logo {
+                background-image: linear-gradient(to left, var(--color-red) 0%, rgba(0, 0, 0, 1) 100%);
+            }
+        }
+
+        &.Default {
+            background: linear-gradient(180deg, 
+                rgba(0,0,0,0.9) 0%,
+                rgba(20,20,20,0.8) 50%,
+                rgba(0,0,0,0.9) 100%
+            );
+            .Logo {
+                background-image: black;
+            }
+        }
+    }
+
+
+    .Logo {
+        width: 100%;
+        height: var(--box-logo-height);
+        z-index: 10;
+        transition: background 0.3s ease;
+        img {
+            width: 95%;
+            height: 95%;
+            margin: 0 auto;
+            padding-top: calc(100% / 3); // Adjusted to position logo at 1/3 height
+            padding-bottom: calc(100% / 3); // Adjusted to position logo at 1/3 height
+            display: block;
+            object-fit: contain;
+        }
+    }
+
+    @import "./timer";
+    @import "./team";
+} 
+
+.ProgressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  transition: width 1s linear;
+  z-index: 100;
+
+  &.Blue {
+    background: linear-gradient(90deg, var(--color-blue) 0%, rgba(25,173,208,0.5) 100%);
+    box-shadow: 0 0 10px rgba(25,173,208,0.5);
+  }
+
+  &.Red {
+    background: linear-gradient(90deg, var(--color-red) 0%, rgba(162,8,8,0.5) 100%);
+    box-shadow: 0 0 10px rgba(162,8,8,0.5);
+  }
+
+  &.Default {
+    background: linear-gradient(90deg, #666 0%, rgba(102,102,102,0.5) 100%);
+    box-shadow: 0 0 10px rgba(102,102,102,0.5);
+  }
+}
+
+.ChampSelect {
+  &.BlueBackground {
+    background: radial-gradient(circle at center, rgba(25,173,208,0.2) 0%, transparent 70%);
+  }
+
+  &.RedBackground {
+    background: radial-gradient(circle at center, rgba(162,8,8,0.2) 0%, transparent 70%);
+  }
+
+  &.DefaultBackground {
+    background: radial-gradient(circle at center, rgba(102,102,102,0.2) 0%, transparent 70%);
+  }
+} 

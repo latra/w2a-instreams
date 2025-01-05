@@ -1,0 +1,105 @@
+.Picks {
+  width: 100%;
+  height: var(--box-pick-height);
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  .Pick {
+    position: relative;
+    width: 20%;
+    height: 100%;
+    overflow: hidden;
+    border-left: solid var(--border-between-color) 1px;
+    background-color: #0a0a0a;
+    &.Active {
+      .PlayerName {
+        height: calc(2 * var(--pick-name-height)) !important;
+        margin-top: calc(-1 * var(--pick-name-height));
+        line-height: calc(2 * var(--pick-name-height));
+        position: relative;
+        z-index: 2;
+      }
+      .PickImage {
+        position: relative;
+        z-index: 1;
+        &::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-size: 200% 200%;
+          animation: shimmer 1.5s infinite linear;
+          .TeamBlue & {
+            background: linear-gradient(45deg, rgba(255,255,255,0) 45%,rgba(0, 162, 255, 0.5) 50%,rgba(0, 204, 255, 0) 55%);
+          }
+          .TeamRed & {
+            background: linear-gradient(45deg, rgba(255, 0, 0, 0) 45%,rgba(255, 0, 0, 0.5) 50%,rgba(255, 0, 0, 0) 55%);
+          }
+        }
+      }
+    }
+
+    .TeamBlue & {
+
+      &.Active {
+        border: 5px solid var(--color-blue);
+        .PlayerName {
+          background-color: var(--color-blue);
+        }
+      }
+    }
+
+    .TeamRed & {
+      &.Active {
+        border: 5px solid var(--color-red);
+        .PlayerName {
+          background-color: var(--color-red);
+        }
+      }
+    }
+
+    .PlayerName {
+      transition: height 1s, font-size 1s, margin-top 1s;
+      height: var(--pick-name-height);
+      color: white;
+      background-color: black;
+      text-align: center;
+      font-size: calc(0.5 * var(--pick-name-height));
+      line-height: var(--pick-name-height);
+    }
+
+    .PickImage {
+      position: relative;
+      height: calc(100% - var(--pick-name-height));
+      
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    &[draggable="true"] {
+      cursor: move;
+      
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+
+    &.dragOver {
+      border: 2px dashed #fff;
+    }
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+} 

@@ -2,13 +2,22 @@
   "name": "uvedoblefront",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://w2avalanche.github.io/w2-ingame",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d out",
+    "deploy:dev": "cross-env NODE_ENV=development npm run deploy"
   },
   "dependencies": {
+    "classnames": "2.3.2",
+    "sass": "1.83.1",
+
+    "axios": "^1.7.9",
     "next": "15.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
@@ -23,6 +32,8 @@
     "eslint-config-next": "15.1.1",
     "postcss": "^8",
     "tailwindcss": "^3.4.1",
-    "typescript": "^5"
+    "typescript": "^5",
+    "cross-env": "^7.0.3",
+    "gh-pages": "^6.3.0"
   }
 }
