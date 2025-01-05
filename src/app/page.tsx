@@ -11,7 +11,7 @@ export default function Home() {
   const [blueTeamName, setBlueTeamName] = useState<string>("");
   const [redTeamName, setRedTeamName] = useState<string>("");
   const [daweId, setDaweId] = useState<string>("");
-  const [state, setState] = useState<Game | null>(null);
+  const [state, setState] = useState<any | null>(null);
   const [tournamentName, setTournamentName] = useState<string>("");
   const sendGameData = async () => {
     try {
@@ -30,7 +30,7 @@ export default function Home() {
         const checkGame = setInterval(() => {
           if (gameState.viewGame) {
             clearInterval(checkGame);
-            setState(gameState);
+            setState({...gameState});
             resolve();
           }
         }, 100);
@@ -48,7 +48,7 @@ export default function Home() {
           if (gameState.viewGame.state.realTimer > 0) {
             gameState.viewGame.state.realTimer -= 1000;
             gameState.viewGame.state.timer = Math.round(gameState.viewGame.state.realTimer / 1000).toString();
-            setState(gameState); // Update state to reflect the change
+            setState({...gameState}); // Create new object reference to trigger re-render
           }
         }, 1100);
       };
@@ -57,10 +57,8 @@ export default function Home() {
         try {
           const gameData = new Status(JSON.parse(event.data)['newState']);
           gameState.loadStatus(gameData);
-          setState(gameState); // Forzar re-render creando un nuevo objeto
-
-          // Reduce realTimer by 1000 every second
-
+          setState({...gameState}); // Create new object reference to trigger re-render
+          console.log(gameState.viewGame.state.realTimer);
 
         } catch (error) {
           console.error('Error processing message:', error);
@@ -120,9 +118,9 @@ export default function Home() {
     </div>
     <BottleTeams setBlueTeamPlayers={setBlueTeamPlayers} setRedTeamPlayers={setRedTeamPlayers} setBlueTeamName={setBlueTeamName} setRedTeamName={setRedTeamName} />
   </>) }
-  {state && state.viewGame && state.viewGame.state && (
+  {state && state.viewGame && (state.viewGame.started || state.viewGame.ended) && state.viewGame.state.config && (
         <div className={`${styles.root} ${styles.App}`}>
-        <Overlay state={state.viewGame.state} config={state.viewGame.state.config} setState={setState} />
+        <Overlay globalState={state} state={state.viewGame.state} config={state.viewGame.state.config} setState={setState} />
       </div>
     )}
     </main>

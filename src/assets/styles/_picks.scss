@@ -84,9 +84,6 @@
     &[draggable="true"] {
       cursor: move;
       
-      &:hover {
-        opacity: 0.8;
-      }
     }
 
     &.dragOver {

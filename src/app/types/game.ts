@@ -111,4 +111,5 @@ export interface ViewGame {
   eventType: string;
   state: ViewGameState;
   ended: boolean;
+  started: boolean;
 } 

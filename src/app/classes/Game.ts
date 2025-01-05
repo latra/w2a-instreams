@@ -53,7 +53,8 @@ export class Game {
                 leagueConnected: true,
                 anyTeam: false
             },
-            ended: false
+            ended: false,
+            started: false
         };
   });
 
@@ -76,6 +77,7 @@ export class Game {
   }
 
   public swapPositions(team: string, positionA: number, positionB: number): void {
+    console.log("Swapping positions", team, positionA, positionB);
     if (team === "blue") {
       [this.viewGame.state.blueTeam.picks[positionA].champion, 
        this.viewGame.state.blueTeam.picks[positionB].champion] = 
@@ -235,7 +237,14 @@ export class Game {
     this.viewGame.state.realTimer = status.nextTimeout;
     this.viewGame.state.timer = (status.nextTimeout/1000).toFixed(0);
     if (status.state === PickStatusEnum.on_going) {
+      this.viewGame.started = true;
       this.activePhase(status.turn as unknown as number);
+    }
+    else if (status.state === PickStatusEnum.finished) {
+      this.viewGame.ended = true;
+    }
+    else if (status.state === PickStatusEnum.not_started) {
+      this.viewGame.started = false;
     }
   }
 } 

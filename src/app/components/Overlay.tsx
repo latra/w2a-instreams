@@ -3,14 +3,16 @@ import cx from 'classnames';
 import Pick from './Pick';
 import Ban from './Ban';
 import styles from '@/assets/styles/index.module.scss';
+import { Game } from '../classes/Game';
 
 interface OverlayProps {
+  globalState: Game;
   state: any;
   config: any;
   setState: any;
 }
 
-const Overlay: React.FC<OverlayProps> = ({ state, config, setState }) => {
+const Overlay: React.FC<OverlayProps> = ({ globalState, state, config, setState }) => {
   const [currentAnimationState, setCurrentAnimationState] = useState(styles.TheAbsoluteVoid);
   const [openingAnimationPlayed, setOpeningAnimationPlayed] = useState(false);
 
@@ -53,8 +55,18 @@ const Overlay: React.FC<OverlayProps> = ({ state, config, setState }) => {
     // Solo permitir intercambios dentro del mismo equipo
     if (team !== dragTeam) return;
 
-    state.game.swapPositions(dragTeam, oldPosition, newPosition);
-    setState(state);
+    if (team === "blue") {
+      [globalState.viewGame.state.blueTeam.picks[oldPosition].champion, 
+      globalState.viewGame.state.blueTeam.picks[newPosition].champion] = 
+      [globalState.viewGame.state.blueTeam.picks[newPosition].champion,
+      globalState.viewGame.state.blueTeam.picks[oldPosition].champion];
+    } else {
+      [globalState.viewGame.state.redTeam.picks[oldPosition].champion,
+      globalState.viewGame.state.redTeam.picks[newPosition].champion] = 
+      [globalState.viewGame.state.redTeam.picks[newPosition].champion,
+      globalState.viewGame.state.redTeam.picks[oldPosition].champion];
+    }
+    setState({...globalState});
   };
 
   const renderBans = (teamState: any) => {
