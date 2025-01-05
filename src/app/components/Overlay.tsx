@@ -53,14 +53,8 @@ const Overlay: React.FC<OverlayProps> = ({ state, config, setState }) => {
     // Solo permitir intercambios dentro del mismo equipo
     if (team !== dragTeam) return;
 
-    try {
-      const response = await fetch(`http://localhost:8000/game/${team}/${oldPosition}/${newPosition}`, {
-        method: 'PUT'
-      });
-
-    } catch (error) {
-      console.error('Error swapping positions:', error);
-    }
+    state.game.swapPositions(dragTeam, oldPosition, newPosition);
+    setState(state);
   };
 
   const renderBans = (teamState: any) => {
