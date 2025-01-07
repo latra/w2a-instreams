@@ -1,8 +1,10 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  basePath: '/w2a-instreams',
-  assetPrefix: '/w2a-instreams/',
+  basePath: '',
+  assetPrefix: '',
+  // basePath: '/w2a-instreams',
+  // assetPrefix: '/w2a-instreams/',
   eslint: {
     ignoreDuringBuilds: true,
   },

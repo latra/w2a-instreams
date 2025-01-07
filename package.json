@@ -5,7 +5,7 @@
   "homepage": "https://latra.github.io/w2a-instreams/",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && type nul > out/.nojekyll",
+    "build": "next build",
     "start": "next start",
     "lint": "next lint",
     "export": "next export",

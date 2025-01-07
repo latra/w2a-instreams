@@ -1,10 +1,11 @@
 'use client';
 import styles from '@/assets/styles/index.module.scss';
 import BottleTeams from '@/app/components/BottleTeams';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Status } from '@/app/types/dawe';
 import { Game } from '@/app/classes/Game';
 import Overlay from '@/app/components/Overlay';
+import { Peer, DataConnection } from "peerjs";
 export default function Home() {
   const [blueTeamPlayers, setBlueTeamPlayers] = useState<string[]>(['','','','','','']);
   const [redTeamPlayers, setRedTeamPlayers] = useState<string[]>(['','','','','','']);
@@ -13,6 +14,41 @@ export default function Home() {
   const [daweId, setDaweId] = useState<string>("");
   const [state, setState] = useState<any | null>(null);
   const [tournamentName, setTournamentName] = useState<string>("");
+
+  const [uuid, setUuid] = useState('');
+  const [peer, setPeer] = useState<Peer | null>(null);
+  const [peerStatus, setPeerStatus] = useState<string>('disconnected');
+  const [connection, setConnection] = useState<DataConnection | null>(null);
+  const [status, setStatus] = useState('disconnected');
+  useEffect(() => {
+      var newPeer = null; 
+      if (uuid === '') {
+          newPeer = new Peer();
+      }
+      else{
+          newPeer = new Peer(uuid);
+      }
+      setPeer(newPeer);
+      newPeer.on('open', (id) => {
+          setUuid(id);
+          setPeerStatus('ready');
+          console.log(`Peer ID: ${id}`);
+          newPeer.on('connection', function(conn) {
+              setConnection(conn);
+          });
+      });
+  }, []);
+
+  const sendMessage = (gameState: any) => {
+    if (connection) {
+      console.log("SENDING MESSAGE");
+      console.log(gameState);
+      connection.send(gameState);
+    }
+  }
+
+
+
   const sendGameData = async () => {
     try {
       const gameState = new Game(daweId, {
@@ -32,6 +68,7 @@ export default function Home() {
             clearInterval(checkGame);
             setState({...gameState});
             resolve();
+            sendMessage(gameState);
           }
         }, 100);
       });
@@ -58,6 +95,7 @@ export default function Home() {
           const gameData = new Status(JSON.parse(event.data)['newState']);
           gameState.loadStatus(gameData);
           setState({...gameState}); // Create new object reference to trigger re-render
+          sendMessage(gameState);
           console.log(gameState.viewGame.state.realTimer);
 
         } catch (error) {
@@ -89,40 +127,44 @@ export default function Home() {
   
   return (
     <main className="min-h-screen">
-      {(!state) && (<>
-    <div className="flex justify-between p-4">
+      <div className="flex-row justify-between p-8">
+        <div className="flex-row justify-between items-center p-4">
+          <h1 className="text-2xl font-bold">View ID: {uuid}</h1>
+          Introduce este ID en '/picks' para conectar al dawe y ver el draft.
+        </div>
+      <div className="flex justify-between p-4">
 
-      <div className="flex flex-col w-1/3 p-4">
-        <input value={blueTeamPlayers[0]} type="text" placeholder="Jugador 1" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[0] = e.target.value; return newPlayers; })} />
-        <input value={blueTeamPlayers[1]} type="text" placeholder="Jugador 2" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[1] = e.target.value; return newPlayers; })} />
-        <input value={blueTeamPlayers[2]} type="text" placeholder="Jugador 3" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[2] = e.target.value; return newPlayers; })} />
-        <input value={blueTeamPlayers[3]} type="text" placeholder="Jugador 4" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[3] = e.target.value; return newPlayers; })} />
-        <input value={blueTeamPlayers[4]} type="text" placeholder="Jugador 5" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[4] = e.target.value; return newPlayers; })} />
-        <input value={blueTeamName} type="text" placeholder="Nombre del equipo" className="mb-2 p-2 border" onChange={(e) => setBlueTeamName(e.target.value)} />
+        <div className="flex flex-col w-1/3 p-4">
+          <input value={blueTeamPlayers[0]} type="text" placeholder="Jugador 1" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[0] = e.target.value; return newPlayers; })} />
+          <input value={blueTeamPlayers[1]} type="text" placeholder="Jugador 2" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[1] = e.target.value; return newPlayers; })} />
+          <input value={blueTeamPlayers[2]} type="text" placeholder="Jugador 3" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[2] = e.target.value; return newPlayers; })} />
+          <input value={blueTeamPlayers[3]} type="text" placeholder="Jugador 4" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[3] = e.target.value; return newPlayers; })} />
+          <input value={blueTeamPlayers[4]} type="text" placeholder="Jugador 5" className="mb-2 p-2 border" onChange={(e) => setBlueTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[4] = e.target.value; return newPlayers; })} />
+          <input value={blueTeamName} type="text" placeholder="Nombre del equipo" className="mb-2 p-2 border" onChange={(e) => setBlueTeamName(e.target.value)} />
+        </div>
+        <div className="flex flex-col w-1/3 p-4">
+          <input type="text" placeholder="Daw ID" className="mb-2 p-2 border" onChange={(e) => setDaweId(e.target.value)} />
+          <input type="text" placeholder="Nombre del torneo" className="mb-2 p-2 border" onChange={(e) => setTournamentName(e.target.value)} />
+          <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded" onClick={sendGameData}>Empezar monitorización de Dawe!</button>
+          <button className="bg-gray-500 hover:bg-gray-700 text-white p-2 rounded mt-10" onClick={swap_side}>¡CAMBIO DE LADO!</button>
+          <button className="bg-red-500 hover:bg-red-700 text-white p-2 rounded mt-10" onClick={clean_data}>¡Limpieza!</button>
+        </div>
+        <div className="flex flex-col w-1/3 p-4">
+          <input value={redTeamPlayers[0]} type="text" placeholder="Jugador 6" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[0] = e.target.value; return newPlayers; })}  />
+          <input value={redTeamPlayers[1]} type="text" placeholder="Jugador 7" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[1] = e.target.value; return newPlayers; })} />
+          <input value={redTeamPlayers[2]} type="text" placeholder="Jugador 8" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[2] = e.target.value; return newPlayers; })} />
+          <input value={redTeamPlayers[3]} type="text" placeholder="Jugador 9" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[3] = e.target.value; return newPlayers; })} />
+          <input value={redTeamPlayers[4]} type="text" placeholder="Jugador 10" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[4] = e.target.value; return newPlayers; })} />
+          <input value={redTeamName} type="text" placeholder="Nombre del equipo" className="mb-2 p-2 border" onChange={(e) => setRedTeamName(e.target.value)} />
+        </div>
       </div>
-      <div className="flex flex-col w-1/3 p-4">
-        <input type="text" placeholder="Daw ID" className="mb-2 p-2 border" onChange={(e) => setDaweId(e.target.value)} />
-        <input type="text" placeholder="Nombre del torneo" className="mb-2 p-2 border" onChange={(e) => setTournamentName(e.target.value)} />
-        <button className="bg-blue-500 hover:bg-blue-700 text-white p-2 rounded" onClick={sendGameData}>Empezar monitorización de Dawe!</button>
-        <button className="bg-gray-500 hover:bg-gray-700 text-white p-2 rounded mt-10" onClick={swap_side}>¡CAMBIO DE LADO!</button>
-        <button className="bg-red-500 hover:bg-red-700 text-white p-2 rounded mt-10" onClick={clean_data}>¡Limpieza!</button>
+      <div className="flex-row justify-between p-4">
+        <input type="text" placeholder="Añadir delay del draft (s)" className="mb-2 p-2 border" />
       </div>
-      <div className="flex flex-col w-1/3 p-4">
-        <input value={redTeamPlayers[0]} type="text" placeholder="Jugador 6" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[0] = e.target.value; return newPlayers; })}  />
-        <input value={redTeamPlayers[1]} type="text" placeholder="Jugador 7" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[1] = e.target.value; return newPlayers; })} />
-        <input value={redTeamPlayers[2]} type="text" placeholder="Jugador 8" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[2] = e.target.value; return newPlayers; })} />
-        <input value={redTeamPlayers[3]} type="text" placeholder="Jugador 9" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[3] = e.target.value; return newPlayers; })} />
-        <input value={redTeamPlayers[4]} type="text" placeholder="Jugador 10" className="mb-2 p-2 border" onChange={(e) => setRedTeamPlayers(prev => { const newPlayers = [...prev]; newPlayers[4] = e.target.value; return newPlayers; })} />
-        <input value={redTeamName} type="text" placeholder="Nombre del equipo" className="mb-2 p-2 border" onChange={(e) => setRedTeamName(e.target.value)} />
+      <div className="flex-row justify-between p-4">
+        <BottleTeams setBlueTeamPlayers={setBlueTeamPlayers} setRedTeamPlayers={setRedTeamPlayers} setBlueTeamName={setBlueTeamName} setRedTeamName={setRedTeamName} />
       </div>
-    </div>
-    <BottleTeams setBlueTeamPlayers={setBlueTeamPlayers} setRedTeamPlayers={setRedTeamPlayers} setBlueTeamName={setBlueTeamName} setRedTeamName={setRedTeamName} />
-  </>) }
-  {state && state.viewGame && (state.viewGame.started || state.viewGame.ended) && state.viewGame.state.config && (
-        <div className={`${styles.root} ${styles.App}`}>
-        <Overlay globalState={state} state={state.viewGame.state} config={state.viewGame.state.config} setState={setState} />
       </div>
-    )}
     </main>
   );
 }
