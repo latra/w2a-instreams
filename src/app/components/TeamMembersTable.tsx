@@ -99,7 +99,7 @@ export default function TeamMembersTable({ gameState }: TeamMembersTableProps) {
   const redTeam = gameState.scoreboardBottom.teams[1];
 
   return (
-    <div className="fixed bottom-6 left-0 right-0 flex justify-center animate-fadeIn">
+    <div className="fixed bottom-0 left-4 right-0 flex justify-center animate-fadeIn">
       <div className="w-[750px] bg-gray-900/80 rounded-t-lg overflow-hidden">
         <div className="grid grid-cols-[1fr,auto,1fr]">
           {/* Blue Team */}

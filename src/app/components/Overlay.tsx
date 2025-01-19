@@ -10,9 +10,10 @@ interface OverlayProps {
   state: any;
   config: any;
   setState: any;
+  dropCall: any;
 }
 
-const Overlay: React.FC<OverlayProps> = ({ globalState, state, config, setState }) => {
+const Overlay: React.FC<OverlayProps> = ({ globalState, state, config, setState, dropCall }) => {
   const [currentAnimationState, setCurrentAnimationState] = useState(styles.TheAbsoluteVoid);
   const [openingAnimationPlayed, setOpeningAnimationPlayed] = useState(false);
 
@@ -51,22 +52,7 @@ const Overlay: React.FC<OverlayProps> = ({ globalState, state, config, setState 
     const data = JSON.parse(e.dataTransfer.getData('text/plain'));
     const oldPosition = data.position;
     const dragTeam = data.team;
-
-    // Solo permitir intercambios dentro del mismo equipo
-    if (team !== dragTeam) return;
-
-    if (team === "blue") {
-      [globalState.viewGame.state.blueTeam.picks[oldPosition].champion, 
-      globalState.viewGame.state.blueTeam.picks[newPosition].champion] = 
-      [globalState.viewGame.state.blueTeam.picks[newPosition].champion,
-      globalState.viewGame.state.blueTeam.picks[oldPosition].champion];
-    } else {
-      [globalState.viewGame.state.redTeam.picks[oldPosition].champion,
-      globalState.viewGame.state.redTeam.picks[newPosition].champion] = 
-      [globalState.viewGame.state.redTeam.picks[newPosition].champion,
-      globalState.viewGame.state.redTeam.picks[oldPosition].champion];
-    }
-    setState({...globalState});
+    dropCall(newPosition, oldPosition, dragTeam, team);
   };
 
   const renderBans = (teamState: any) => {

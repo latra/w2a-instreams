@@ -85,7 +85,7 @@ export default function InGame() {
       {gameState.scoreboard && <InhibitorStatus gameState={gameState} />}
       {gameState.goldGraph?.current?.goldAtTime ? (
         <GoldGraph gameState={gameState} />
-      ) : gameState.scoreboard ? (
+      ) : (gameState.scoreboard && gameState.scoreboardBottom != null) ? (
         <TeamMembersTable gameState={gameState} />
       ) : null}</>
       }

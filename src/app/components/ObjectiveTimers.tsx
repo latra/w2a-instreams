@@ -8,7 +8,7 @@ interface ObjectiveTimerProps {
 }
 const getAssetUrl = (path: string) => {
   if (!path) return '';
-  return `http://localhost:5000/${path}`;
+  return `http://localhost:5000/cache/${path}`;
 };
 export default function ObjectiveTimers({ gameState }: ObjectiveTimerProps) {
     
@@ -109,15 +109,16 @@ export default function ObjectiveTimers({ gameState }: ObjectiveTimerProps) {
   return (
     <div className="fixed top-0 left-0 right-0">
       {/* Baron Timer */}
-      <div className="absolute left-0">
+      {(gameState.scoreboard.teams[0].baronPowerPlay != null || gameState.scoreboard.teams[1].baronPowerPlay != null) && (
+        <div className="absolute left-0">
         {(gameState.scoreboard.teams[0].baronPowerPlay === null || gameState.scoreboard.teams[0].baronPowerPlay.timeLeft < 0) && (gameState.scoreboard.teams[1].baronPowerPlay === null || gameState.scoreboard.teams[1].baronPowerPlay.timeLeft < 0) && renderTimer(gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron', gameState.baronPitTimer.timeTotal)}
         {(gameState.scoreboard.teams[0].baronPowerPlay !== null && gameState.scoreboard.teams[0].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[0], 'blue', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron')}
         {(gameState.scoreboard.teams[1].baronPowerPlay !== null && gameState.scoreboard.teams[1].baronPowerPlay.timeLeft > 0) && renderPowerPlay(gameState.scoreboard.teams[1], 'red', gameState.baronPitTimer.timeLeft, gameState.baronPitTimer.subType, 'Baron')}
-      </div>
-      
+        </div>
+      )}
       {/* Dragon Timer */}
       <div className="absolute right-0">
-        {gameState.scoreboard.teams[0].dragonPowerPlay === null && gameState.scoreboard.teams[1].dragonPowerPlay === null && renderTimer(gameState.dragonPitTimer.timeLeft, gameState.dragonPitTimer.subType, 'Dragon', gameState.dragonPitTimer.timeTotal)}
+        {gameState.scoreboard.teams[0].dragonPowerPlay !== null && gameState.scoreboard.teams[1].dragonPowerPlay !== null && renderTimer(gameState.dragonPitTimer.timeLeft, gameState.dragonPitTimer.subType, 'Dragon', gameState.dragonPitTimer.timeTotal)}
       </div>
     </div>
   );

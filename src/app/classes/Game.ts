@@ -7,66 +7,60 @@ export class Game {
   private bluePlayers: string[];
   private redPlayers: string[];
 
-  constructor(daweId: string, gameConfig: any) {
+
+  constructor(daweId: string, version: string, gameConfig: any, game_status: Status) {
     this.daweId = daweId;
-    const version = this.getCurrentGameVersion();
-    version.then((version) => {
-        console.log(version);
-        console.log(gameConfig);
-        this.viewGame = {
-            eventType: "newState",
-            state: {
-                realTimer: 0,
-                config: {
-                    logo: gameConfig.tournament_logo,
-                    scoreEnabled: false,
-                    spellsEnabled: false,
-                    coachesEnabled: false,
-                    blueTeam: {
-                        name: gameConfig.blue_team_name,
-                        score: 0,
-                        coach: "",
-                        logo: gameConfig.blue_team_logo,
-                        color: "rgb(25,173,208)"
-                    },
-                    redTeam: {
-                        name: gameConfig.red_team_name,
-                        score: 0,
-                        coach: "",
-                        logo: gameConfig.red_team_logo,
-                        color: "rgb(162,8,8)"
-                    },
-                    patch: version
-                },
+
+    this.viewGame = {
+        eventType: "newState",
+        state: {
+            realTimer: 0,
+            config: {
+                logo: gameConfig.tournament_logo,
+                scoreEnabled: false,
+                spellsEnabled: false,
+                coachesEnabled: false,
                 blueTeam: {
-                picks: [],
-                bans: [],
-                isActive: false
+                    name: gameConfig.blue_team_name,
+                    score: 0,
+                    coach: "",
+                    logo: gameConfig.blue_team_logo,
+                    color: "rgb(25,173,208)"
                 },
                 redTeam: {
-                picks: [],
-                bans: [],
-                isActive: false
+                    name: gameConfig.red_team_name,
+                    score: 0,
+                    coach: "",
+                    logo: gameConfig.red_team_logo,
+                    color: "rgb(162,8,8)"
                 },
-                timer: "30",
-                champSelectActive: true,
-                leagueConnected: true,
-                anyTeam: false
+                patch: version
             },
-            ended: false,
-            started: false
-        };
-  });
+            blueTeam: {
+            picks: [],
+            bans: [],
+            isActive: false
+            },
+            redTeam: {
+            picks: [],
+            bans: [],
+            isActive: false
+            },
+            timer: "30",
+            champSelectActive: true,
+            leagueConnected: true,
+            anyTeam: false
+        },
+        ended: false,
+        started: false
+    };
 
     this.bluePlayers = gameConfig.blue_team_players;
     this.redPlayers = gameConfig.red_team_players;
+    this.loadStatus(game_status);
+
   }
 
-  private async getCurrentGameVersion(): Promise<string> {
-    const response = await fetch("https://ddragon.leagueoflegends.com/api/versions.json");
-    const data = await response.json();
-    return data[0];
-  }
 
   private getDatadragonImage(champ: string): string {
     return `https://ddragon.leagueoflegends.com/cdn/${this.viewGame.state.config.patch}/img/champion/${champ}.png`;
@@ -172,7 +166,7 @@ export class Game {
     }
   }
 
-  public loadStatus(status: Status): void {
+  public loadStatus(status: Status): Game {
     this.viewGame.state.blueTeam.picks.forEach(pick => pick.isActive = false);
     this.viewGame.state.blueTeam.bans.forEach(ban => ban.isActive = false);
     this.viewGame.state.redTeam.picks.forEach(pick => pick.isActive = false);
@@ -245,6 +239,15 @@ export class Game {
     }
     else if (status.state === PickStatusEnum.not_started) {
       this.viewGame.started = false;
+    }
+    return this;
+  }
+
+  public updateTimer() {
+    if (this.viewGame.state.realTimer > 0) {
+      this.viewGame.state.realTimer -= 1000;
+      this.viewGame.state.timer = (this.viewGame.state.realTimer / 1000).toFixed(0);
+      console.log(this.viewGame.state.timer);
     }
   }
 } 
